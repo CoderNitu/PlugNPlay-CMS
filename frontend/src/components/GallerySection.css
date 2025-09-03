@@ -1,0 +1,219 @@
+/* Blog and Widget plugin cards use the same styles as gallery cards for consistency */
+.blog-card, .widget-card {
+  background: linear-gradient(135deg, #eaf2fb 0%, #d1eaff 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #b3d1f7;
+  padding: 32px;
+  margin: 24px 0;
+  animation: fadeIn 0.7s;
+}
+
+.blog-title, .widget-title {
+  font-size: 2rem;
+  color: #4f8cff;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.blog-list, .widget-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.blog-item, .widget-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #e0e7ef;
+  padding: 16px;
+  text-align: center;
+  min-width: 180px;
+  max-width: 180px;
+  transition: transform 0.2s;
+  animation: fadeIn 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-item.add-new, .widget-item.add-new {
+  border: 2px dashed #4f8cff;
+  background: #f0f7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  min-width: 220px;
+  max-width: 220px;
+  margin-bottom: 16px;
+}
+
+.blog-item.add-new input[type="file"], .widget-item.add-new input[type="file"] {
+  display: block;
+  margin: 0 auto 12px auto;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #b3d1f7;
+  background: #fff;
+  font-size: 1rem;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.blog-item.add-new .blog-input, .widget-item.add-new .widget-input {
+  margin-bottom: 12px;
+  width: 90%;
+}
+
+.blog-item.add-new .blog-btn.upload, .widget-item.add-new .widget-btn.upload {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px 0;
+  margin-top: 4px;
+}
+
+.blog-btn, .widget-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 6px;
+}
+.blog-btn.upload, .widget-btn.upload { background: #4f8cff; color: #fff; }
+.blog-btn.edit, .widget-btn.edit { background: #ffe066; color: #333; }
+.blog-btn.delete, .widget-btn.delete { background: #ff6b6b; color: #fff; }
+.blog-btn.save, .widget-btn.save { background: #4f8cff; color: #fff; }
+.blog-btn.cancel, .widget-btn.cancel { background: #ccc; color: #333; }
+
+.blog-title-text, .widget-title-text {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4f8cff;
+}
+.gallery-card {
+  background: linear-gradient(135deg, #eaf2fb 0%, #d1eaff 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #b3d1f7;
+  padding: 32px;
+  margin: 24px 0;
+  animation: fadeIn 0.7s;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  color: #4f8cff;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #e0e7ef;
+  padding: 16px;
+  text-align: center;
+  min-width: 180px;
+  max-width: 180px;
+  transition: transform 0.2s;
+  animation: fadeIn 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.gallery-item.add-new {
+  border: 2px dashed #4f8cff;
+  background: #f0f7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  min-width: 220px;
+  max-width: 220px;
+  margin-bottom: 16px;
+}
+
+.gallery-item.add-new input[type="file"] {
+  display: block;
+  margin: 0 auto 12px auto;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #b3d1f7;
+  background: #fff;
+  font-size: 1rem;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.gallery-item.add-new .gallery-input {
+  margin-bottom: 12px;
+  width: 90%;
+}
+
+.gallery-item.add-new .gallery-btn.upload {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px 0;
+  margin-top: 4px;
+}
+
+.gallery-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gallery-img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px #b3d1f7;
+  transition: box-shadow 0.2s;
+}
+
+.gallery-input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #b3d1f7;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  width: 90%;
+}
+
+.gallery-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 6px;
+}
+
+.gallery-btn.upload { background: #4f8cff; color: #fff; }
+.gallery-btn.edit { background: #ffe066; color: #333; }
+.gallery-btn.delete { background: #ff6b6b; color: #fff; }
+.gallery-btn.save { background: #4f8cff; color: #fff; }
+.gallery-btn.cancel { background: #ccc; color: #333; }
+
+.gallery-img-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4f8cff;
+}
