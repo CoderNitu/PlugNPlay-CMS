@@ -15,3 +15,5 @@ A flexible, developer-friendly CMS built to extend as your project grows.
 Still working, not completed. If anyone want to collaborate, feel free to join ,it's a public repo....
 
 ```
+
+<img width="1563" height="719" alt="Image" src="https://github.com/user-attachments/assets/45c8fd38-9c0e-4829-b605-e6d57fb05a10" />
